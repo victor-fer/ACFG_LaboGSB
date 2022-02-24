@@ -1,0 +1,22 @@
+﻿<Window x:Class="ACFG_LaboGSB.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ACFG_LaboGSB"
+        mc:Ignorable="d"
+        Title="Laboratoire GSB " Height="422" Width="294" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="139*"/>
+            <ColumnDefinition Width="118*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock HorizontalAlignment="Left" Margin="393,182,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="44" Width="128" Grid.Column="1"><Run Language="fr-fr" Text="Login"/></TextBlock>
+        <TextBox x:Name="TextboxIdentifiant" HorizontalAlignment="Left" Text="Identifiant" TextWrapping="Wrap" VerticalAlignment="Top" Width="165" TextAlignment="Center" Margin="65,214,0,0" MouseEnter="TextboxIdentifiant_MouseEnter" MouseLeave="TextboxIdentifiant_MouseLeave" FontFamily="Malgun Gothic" Grid.ColumnSpan="2" TextChanged="TextboxIdentifiant_TextChanged" Height="20"/>
+        <TextBox x:Name="TextboxMdp" HorizontalAlignment="Left" Margin="65,256,0,0" Text="Mot de passe" TextWrapping="Wrap" VerticalAlignment="Top" Width="165" TextAlignment="Center" FontFamily="Malgun Gothic" TextChanged="TextboxMdp_TextChanged" MouseEnter="TextboxMdp_MouseEnter" MouseLeave="TextboxMdp_MouseLeave" Height="19" Grid.ColumnSpan="2"/>
+        <Button x:Name="ButtonValider" Content="Valider" HorizontalAlignment="Left" Margin="87,309,0,0" VerticalAlignment="Top" Height="26" Width="120" Click="Button_Click" FontFamily="Malgun Gothic" Grid.ColumnSpan="2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="23,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="62" Width="248" FontSize="48" FontFamily="Malgun Gothic" TextAlignment="Center" Grid.ColumnSpan="2" FontWeight="Normal"><Run Language="fr-fr" Text="Connexion"/></TextBlock>
+        <Image x:Name="ImageGSB" HorizontalAlignment="Left" Height="58" Margin="58,114,0,0" VerticalAlignment="Top" Width="179" Source="/logo-gsb-noir.png" Grid.ColumnSpan="2"/>
+
+    </Grid>
+</Window>
